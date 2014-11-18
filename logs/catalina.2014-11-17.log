@@ -1,0 +1,134 @@
+Nov 17, 2014 8:00:10 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Zhang_Kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Nov 17, 2014 8:00:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:00:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:00:10 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Nov 17, 2014 8:00:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:00:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 889 ms
+Nov 17, 2014 8:00:10 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 17, 2014 8:00:10 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Nov 17, 2014 8:00:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer
+Nov 17, 2014 8:00:15 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://www.eclipse.org/birt/taglibs/birt.tld is already defined
+Nov 17, 2014 8:00:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer has finished in 6,163 ms
+Nov 17, 2014 8:00:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/javadoc
+Nov 17, 2014 8:00:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/javadoc has finished in 11 ms
+Nov 17, 2014 8:00:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakart
+Nov 17, 2014 8:00:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakart has finished in 1,761 ms
+Nov 17, 2014 8:00:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakartadmin
+Nov 17, 2014 8:00:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakartadmin has finished in 770 ms
+Nov 17, 2014 8:00:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/ROOT
+Nov 17, 2014 8:00:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/ROOT has finished in 11 ms
+Nov 17, 2014 8:00:19 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:00:19 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:00:19 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:00:19 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8753 ms
+Nov 17, 2014 8:01:23 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:01:23 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 17, 2014 8:01:23 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/konakart] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 17, 2014 8:01:23 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/konakart] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak.
+Nov 17, 2014 8:01:23 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/konakartadmin] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 17, 2014 8:01:23 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/konakartadmin] appears to have started a thread named [Thread-7] but has failed to stop it. This is very likely to create a memory leak.
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:01:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:03:04 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/Zhang_Kevin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Nov 17, 2014 8:03:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:03:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:03:04 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Nov 17, 2014 8:03:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:03:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 531 ms
+Nov 17, 2014 8:03:04 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 17, 2014 8:03:04 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.54
+Nov 17, 2014 8:03:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer
+Nov 17, 2014 8:03:09 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://www.eclipse.org/birt/taglibs/birt.tld is already defined
+Nov 17, 2014 8:03:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer has finished in 5,516 ms
+Nov 17, 2014 8:03:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/javadoc
+Nov 17, 2014 8:03:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/javadoc has finished in 9 ms
+Nov 17, 2014 8:03:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakart
+Nov 17, 2014 8:03:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakart has finished in 1,735 ms
+Nov 17, 2014 8:03:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakartadmin
+Nov 17, 2014 8:03:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/konakartadmin has finished in 771 ms
+Nov 17, 2014 8:03:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/ROOT
+Nov 17, 2014 8:03:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/Zhang_Kevin/Desktop/konakart/webapps/ROOT has finished in 10 ms
+Nov 17, 2014 8:03:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8780"]
+Nov 17, 2014 8:03:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8783"]
+Nov 17, 2014 8:03:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8788"]
+Nov 17, 2014 8:03:13 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8077 ms
+Nov 17, 2014 8:03:52 PM com.konakart.reports.GetDbParams <init>
+WARNING: Cannot locate configuration source C:/Program Files/KonaKart/webapps/konakartadmin/WEB-INF/classes/konakartadmin.properties
+Nov 17, 2014 11:34:04 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/birtviewer]
+Nov 17, 2014 11:34:04 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/birtviewer] has started
+Nov 17, 2014 11:34:04 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/birtviewer] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@5c48835c]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@1ca83c59]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 17, 2014 11:34:08 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://www.eclipse.org/birt/taglibs/birt.tld is already defined
+Nov 17, 2014 11:34:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/birtviewer] is completed
