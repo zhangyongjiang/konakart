@@ -56,7 +56,7 @@ insert into kk_product_to_templates (products_id, cust_attr_tmpl_id, store_id) s
 
 # Sitemap file location 
 DELETE FROM configuration WHERE configuration_key = 'SITEMAP_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Sitemap file Directory', 'SITEMAP_FILE_DIRECTORY', 'C:/Program Files/KonaKart/batchlogs/', 'The location where KonaKart will write sitemap files', '30', '1', now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Sitemap file Directory', 'SITEMAP_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/batchlogs/', 'The location where KonaKart will write sitemap files', '30', '1', now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
 
 # Sitemap Config panel
 INSERT INTO kk_panel (code, description, date_added) VALUES ('kk_panel_sitemap', 'SitemapConfiguration', now());
@@ -66,11 +66,11 @@ INSERT INTO kk_role_to_panel (role_id, panel_id, can_edit, can_insert, can_delet
 
 # Insert a Configuration for the Importer File Path
 DELETE FROM configuration WHERE configuration_key = 'IMPORT_FILES_PATH';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Import files path','IMPORT_FILES_PATH','C:/Program Files/KonaKart/data/','The import data files location',29,50,now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Import files path','IMPORT_FILES_PATH','/Users/Zhang_Kevin/Desktop/konakart/data/','The import data files location',29,50,now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
 
 # Importer Log file location 
 DELETE FROM configuration WHERE configuration_key = 'IMPORTER_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Importer Log file Directory', 'IMPORTER_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/importerlogs/', 'The location where KonaKart will write importer log files', 29, 60, now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Importer Log file Directory', 'IMPORTER_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/importerlogs/', 'The location where KonaKart will write importer log files', 29, 60, now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
 
 # Add some Configuration Groups
 INSERT INTO configuration_group VALUES (26, 'Reward Points', 'Reward Points Configuration', 26, 1, null);

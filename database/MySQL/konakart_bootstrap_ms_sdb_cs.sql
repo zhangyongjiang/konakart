@@ -21,7 +21,7 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # Update this configuration value for all storeIds
 # This version of the konakart_new_store script is required becaise we're going to be sharing customers
-UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/database/MySQL/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME';
+UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME';
 
 Delete from address_book where customers_id = (select customers_id from customers where customers_email_address = 'store2-admin@konakart.com');
 INSERT INTO address_book (customers_id, entry_gender, entry_company, entry_firstname, entry_lastname, entry_street_address, entry_suburb, entry_postcode, entry_city, entry_state, entry_country_id) VALUES (-1, 'm', 'ACME Inc.', 'store2', 'Admin', 'store2 Street', '', 'PostCodeX', 'City', '', 1);

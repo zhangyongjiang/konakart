@@ -137,7 +137,7 @@ INSERT INTO kk_role_to_panel (role_id, panel_id, can_edit, can_insert, can_delet
 
 # PDF Configuration Parameters
 DELETE FROM configuration where configuration_key = 'PDF_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'PDF Directory', 'PDF_BASE_DIRECTORY', 'C:/Program Files/KonaKart/pdf', 'Defines the root directory for the location of the PDF documents that are created', '27', '5', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'PDF Directory', 'PDF_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/pdf', 'Defines the root directory for the location of the PDF documents that are created', '27', '5', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
 DELETE FROM configuration where configuration_key = 'ENABLE_PDF_INVOICE_DOWNLOAD';
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added, store_id) SELECT 'Enable PDF Invoice Download', 'ENABLE_PDF_INVOICE_DOWNLOAD', 'false', 'When set to true, invoices in PDF format can be downloaded from the application', '27', '10', 'choice(\'true\', \'false\')', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
  
@@ -146,7 +146,7 @@ ALTER TABLE orders add column invoice_filename varchar(255);
 
 # Velocity Template Configuration Parameters
 DELETE FROM configuration where configuration_key = 'TEMPLATE_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Templates Directory', 'TEMPLATE_BASE_DIRECTORY', 'C:/Program Files/KonaKart/templates', 'Defines the root directory where the velocity templates are stored', '28', '10', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Templates Directory', 'TEMPLATE_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/templates', 'Defines the root directory where the velocity templates are stored', '28', '10', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
 
 # Velocity Template Config panel
 INSERT INTO kk_panel (panel_id, code, description, date_added) VALUES (94,'kk_panel_templates', 'Template Configuration', now());

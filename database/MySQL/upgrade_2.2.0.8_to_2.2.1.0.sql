@@ -11,11 +11,11 @@ update kk_api_call set name='insertDigitalDownload' where api_call_id=177;
 
 # KonaKart Mail Properties file location
 delete from configuration where configuration_key = 'KONAKART_MAIL_PROPERTIES_FILE';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart mail properties filename', 'KONAKART_MAIL_PROPERTIES_FILE', 'C:/Program Files/KonaKart/conf/konakart_mail.properties', 'Location of the KonaKart mail properties file', '12', '8', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart mail properties filename', 'KONAKART_MAIL_PROPERTIES_FILE', '/Users/Zhang_Kevin/Desktop/konakart/conf/konakart_mail.properties', 'Location of the KonaKart mail properties file', '12', '8', now());
 
 # Log file location 
 delete from configuration where configuration_key = 'KONAKART_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Log file Directory', 'KONAKART_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/logs', 'The location where KonaKart will write diagnostic log files', '20', '2', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Log file Directory', 'KONAKART_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/logs', 'The location where KonaKart will write diagnostic log files', '20', '2', now());
 
 # Extend the size of the country_name columns to match countries table
 ALTER TABLE orders MODIFY customers_country VARCHAR(64);

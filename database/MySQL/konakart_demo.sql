@@ -1954,7 +1954,7 @@ CREATE TABLE ipn_history (
 # Base URL and path for images
 
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Image base URL','IMG_BASE_URL','http://localhost:8780/konakart/images/','The base URL for application images','4', '9', now());
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Image base path','IMG_BASE_PATH','C:/Program Files/KonaKart/webapps/konakart/images','The base path where application images are saved','4', '10', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Image base path','IMG_BASE_PATH','/Users/Zhang_Kevin/Desktop/konakart/webapps/konakart/images','The base path where application images are saved','4', '10', now());
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('URL for reaching Image servlet','IMG_SERVLET_URL','/konakartadmin/uploadAction','The URL used to reach the servlet used for uploading images','4', '11', now());
 
 # Addition of custom fields
@@ -2007,7 +2007,7 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # Location for report definitions, and BIRT viewer home
 DELETE FROM configuration WHERE configuration_key = 'REPORTS_DEFN_PATH';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report definitions base path','REPORTS_DEFN_PATH','C:/Program Files/KonaKart/webapps/birt-viewer/reports/','The reports definition location','17', '1', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report definitions base path','REPORTS_DEFN_PATH','/Users/Zhang_Kevin/Desktop/konakart/webapps/birt-viewer/reports/','The reports definition location','17', '1', now());
 DELETE FROM configuration WHERE configuration_key = 'REPORTS_EXTENSION';
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report file extension','REPORTS_EXTENSION','.rptdesign','The report file extension - identifies report files','17', '2', now());
 DELETE FROM configuration WHERE configuration_key = 'REPORTS_URL';
@@ -2820,11 +2820,11 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # KonaKart Mail Properties file location
 DELETE FROM configuration WHERE configuration_key = 'KONAKART_MAIL_PROPERTIES_FILE';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart mail properties filename', 'KONAKART_MAIL_PROPERTIES_FILE', 'C:/Program Files/KonaKart/conf/konakart_mail.properties', 'Location of the KonaKart mail properties file', '12', '8', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart mail properties filename', 'KONAKART_MAIL_PROPERTIES_FILE', '/Users/Zhang_Kevin/Desktop/konakart/conf/konakart_mail.properties', 'Location of the KonaKart mail properties file', '12', '8', now());
 
 # Log file location 
 DELETE FROM configuration WHERE configuration_key = 'KONAKART_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Log file Directory', 'KONAKART_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/logs', 'The location where KonaKart will write diagnostic log files', '20', '2', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Log file Directory', 'KONAKART_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/logs', 'The location where KonaKart will write diagnostic log files', '20', '2', now());
 
 # Extend the size of the country_name columns to match countries table
 ALTER TABLE orders MODIFY customers_country VARCHAR(64);
@@ -3230,7 +3230,7 @@ INSERT INTO kk_api_call (api_call_id, name, description, date_added) VALUES (209
 UPDATE configuration SET configuration_value = 'http://localhost:8780/birtviewer/run?__report=reports/OrdersInLast30DaysChart.rptdesign&storeId=store1' WHERE configuration_key = 'REPORTS_STATUS_PAGE_URL';
 
 # Update the reports values after moving birt-viewer to birtviewer
-UPDATE configuration SET configuration_value = 'C:/Program Files/KonaKart/webapps/birtviewer/reports/' WHERE configuration_key = 'REPORTS_DEFN_PATH';
+UPDATE configuration SET configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer/reports/' WHERE configuration_key = 'REPORTS_DEFN_PATH';
 UPDATE configuration SET configuration_value = 'http://localhost:8780/birtviewer/frameset?__report=reports/' WHERE configuration_key = 'REPORTS_URL';
 
 # Run Initial Search on Customer Panel
@@ -3596,9 +3596,9 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # Filenames for new store sql
 DELETE FROM configuration WHERE configuration_key = 'KK_NEW_STORE_SQL_FILENAME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('KonaKart new store creation SQL','KK_NEW_STORE_SQL_FILENAME','C:/Program Files/KonaKart/database/MySQL/konakart_new_store.sql','Filename containing the KonaKart new store creation SQL commands','25', '10', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('KonaKart new store creation SQL','KK_NEW_STORE_SQL_FILENAME','/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store.sql','Filename containing the KonaKart new store creation SQL commands','25', '10', now());
 DELETE FROM configuration WHERE configuration_key = 'USER_NEW_STORE_SQL_FILENAME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('User new store creation SQL','USER_NEW_STORE_SQL_FILENAME','C:/Program Files/KonaKart/database/MySQL/konakart_user_new_store.sql','Filename containing the user defined new store creation SQL commands - these are executed after the KonaKart cloning commands','25', '11', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('User new store creation SQL','USER_NEW_STORE_SQL_FILENAME','/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_user_new_store.sql','Filename containing the user defined new store creation SQL commands - these are executed after the KonaKart cloning commands','25', '11', now());
 
 # Table for wish list
 DROP TABLE IF EXISTS kk_wishlist;
@@ -3722,7 +3722,7 @@ UPDATE kk_role_to_panel SET can_edit=0, can_insert=0, can_delete=0 WHERE role_id
 UPDATE kk_role_to_panel SET can_edit=0, can_insert=0, can_delete=0 WHERE role_id = 5 and panel_id = 14;
 
 # Reports re-located for MultiStore
-UPDATE configuration SET configuration_value = 'C:/Program Files/KonaKart/webapps/birtviewer/reports/stores/store1/' WHERE configuration_key = 'REPORTS_DEFN_PATH';
+UPDATE configuration SET configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer/reports/stores/store1/' WHERE configuration_key = 'REPORTS_DEFN_PATH';
 UPDATE configuration SET configuration_value = 'http://localhost:8780/birtviewer/frameset?__report=reports/stores/store1/' WHERE configuration_key = 'REPORTS_URL';
 UPDATE configuration SET configuration_value = 'http://localhost:8780/birtviewer/run?__report=reports/stores/store1/OrdersInLast25DaysChart.rptdesign&storeId=store1' WHERE configuration_key = 'REPORTS_STATUS_PAGE_URL';
 
@@ -3731,7 +3731,7 @@ UPDATE kk_role_to_panel SET custom2=0, custom2_desc='Set to allow read and edit 
 
 # KonaKart Home Directory
 DELETE FROM configuration WHERE configuration_key = 'INSTALLATION_HOME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Installation Home', 'INSTALLATION_HOME','C:/Program Files/KonaKart/','The home directory of this KonaKart Installation', '1', '26', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Installation Home', 'INSTALLATION_HOME','/Users/Zhang_Kevin/Desktop/konakart/','The home directory of this KonaKart Installation', '1', '26', now());
 
 # Version 4.0.0.0 ---------------------------------------------------------------------
 
@@ -4492,7 +4492,7 @@ INSERT INTO kk_role_to_panel (role_id, panel_id, can_edit, can_insert, can_delet
 
 # PDF Configuration Parameters
 DELETE FROM configuration WHERE configuration_key = 'PDF_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('PDF Directory', 'PDF_BASE_DIRECTORY', 'C:/Program Files/KonaKart/pdf/', 'Defines the root directory for the location of the PDF documents that are created', '27', '5', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('PDF Directory', 'PDF_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/pdf/', 'Defines the root directory for the location of the PDF documents that are created', '27', '5', now());
 DELETE FROM configuration WHERE configuration_key = 'ENABLE_PDF_INVOICE_DOWNLOAD';
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added, store_id) SELECT 'Enable PDF Invoice Download', 'ENABLE_PDF_INVOICE_DOWNLOAD', 'false', 'When set to true, invoices in PDF format can be downloaded from the application', '27', '10', 'choice(\'true\', \'false\')', now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
  
@@ -4501,7 +4501,7 @@ ALTER TABLE orders ADD COLUMN invoice_filename varchar(255);
 
 # Velocity Template Configuration Parameters
 DELETE FROM configuration WHERE configuration_key = 'TEMPLATE_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Templates Directory', 'TEMPLATE_BASE_DIRECTORY', 'C:/Program Files/KonaKart/templates', 'Defines the root directory where the velocity templates are stored', '28', '10', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Templates Directory', 'TEMPLATE_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/templates', 'Defines the root directory where the velocity templates are stored', '28', '10', now());
 
 # Velocity Template Config panel
 INSERT INTO kk_panel (code, description, date_added) VALUES ('kk_panel_templates', 'Template Configuration', now());
@@ -4805,7 +4805,7 @@ UPDATE kk_role_to_panel SET custom4=0, custom4_desc='If set Export button not sh
 
 # Config variable to define the location of the Shipping Orders
 DELETE FROM configuration where configuration_key = 'EXPORT_ORDERS_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Exported Orders Directory', 'EXPORT_ORDERS_BASE_DIRECTORY', 'C:/Program Files/KonaKart/orders', 'Defines the root directory where the Orders are exported to', '7', '7', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Exported Orders Directory', 'EXPORT_ORDERS_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/orders', 'Defines the root directory where the Orders are exported to', '7', '7', now());
 
 # New exportOrder API call
 INSERT INTO kk_api_call (name, description, date_added) VALUES ('exportOrder','', now());
@@ -6544,7 +6544,7 @@ UPDATE products SET products_model='WSCLOCK' where products_id=62;
 
 # Batch Log file location 
 DELETE FROM configuration WHERE configuration_key = 'BATCH_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Batch Log file Directory', 'BATCH_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/batchlogs/', 'The location where KonaKart will write batch log files', '20', '2', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Batch Log file Directory', 'BATCH_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/batchlogs/', 'The location where KonaKart will write batch log files', '20', '2', now());
 
 # Scheduler APIs
 INSERT INTO kk_api_call (name, description, date_added) VALUES ('getJobStatus','', now());
@@ -6604,7 +6604,7 @@ CREATE TABLE kk_product_to_templates (
 
 # Sitemap file location 
 DELETE FROM configuration WHERE configuration_key = 'SITEMAP_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Sitemap file Directory', 'SITEMAP_FILE_DIRECTORY', 'C:/Program Files/KonaKart/batchlogs/', 'The location where KonaKart will write sitemap files', '30', '1', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Sitemap file Directory', 'SITEMAP_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/batchlogs/', 'The location where KonaKart will write sitemap files', '30', '1', now());
 
 # Sitemap Config panel
 INSERT INTO kk_panel (code, description, date_added) VALUES ('kk_panel_sitemap', 'SitemapConfiguration', now());
@@ -6614,11 +6614,11 @@ INSERT INTO kk_role_to_panel (role_id, panel_id, can_edit, can_insert, can_delet
 
 # Insert a Configuration for the Importer File Path
 DELETE FROM configuration WHERE configuration_key = 'IMPORT_FILES_PATH';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Import files path','IMPORT_FILES_PATH','C:/Program Files/KonaKart/data/','The import data files location',29,50,now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Import files path','IMPORT_FILES_PATH','/Users/Zhang_Kevin/Desktop/konakart/data/','The import data files location',29,50,now());
 
 # Importer Log file location 
 DELETE FROM configuration WHERE configuration_key = 'IMPORTER_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Importer Log file Directory', 'IMPORTER_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/importerlogs/', 'The location where KonaKart will write importer log files', 29, 60, now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('Importer Log file Directory', 'IMPORTER_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/importerlogs/', 'The location where KonaKart will write importer log files', 29, 60, now());
 
 # Add some Configuration Groups
 INSERT INTO configuration_group VALUES (26, 'Reward Points', 'Reward Points Configuration', 26, 1, null);

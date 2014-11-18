@@ -88,10 +88,10 @@ CREATE TABLE kk_tier_price (
 ALTER TABLE orders_products ADD COLUMN discount_percent decimal(15,4);
 
 # To correct a problem where sometimes the wrong database scripts were defined when not using MySQL
-#DB2 UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/database/DB2/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = 'C:/Program Files/KonaKart/database/MySQL/konakart_new_store_cs.sql';
-#MSSSQL UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/database/MSSqlServer/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = 'C:/Program Files/KonaKart/database/MySQL/konakart_new_store_cs.sql';
-#Oracle UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/database/Oracle/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = 'C:/Program Files/KonaKart/database/MySQL/konakart_new_store_cs.sql';
-#PostgreSQL UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/database/PostgreSQL/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = 'C:/Program Files/KonaKart/database/MySQL/konakart_new_store_cs.sql';
+#DB2 UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/DB2/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store_cs.sql';
+#MSSSQL UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MSSqlServer/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store_cs.sql';
+#Oracle UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/Oracle/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store_cs.sql';
+#PostgreSQL UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/PostgreSQL/konakart_new_store_cs.sql' where configuration_key = 'KK_NEW_STORE_SQL_FILENAME' and configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store_cs.sql';
 
 # Set the rule for calculating tax
 DELETE FROM configuration where configuration_key = 'TAX_QUANTITY_RULE';

@@ -267,9 +267,9 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # Filenames for new store sql
 delete from configuration where configuration_key = 'KK_NEW_STORE_SQL_FILENAME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('KonaKart new store creation SQL','KK_NEW_STORE_SQL_FILENAME','C:/Program Files/KonaKart/database/MySQL/konakart_new_store.sql','Filename containing the KonaKart new store creation SQL commands','25', '10', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('KonaKart new store creation SQL','KK_NEW_STORE_SQL_FILENAME','/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_new_store.sql','Filename containing the KonaKart new store creation SQL commands','25', '10', now());
 delete from configuration where configuration_key = 'USER_NEW_STORE_SQL_FILENAME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('User new store creation SQL','USER_NEW_STORE_SQL_FILENAME','C:/Program Files/KonaKart/database/MySQL/konakart_user_new_store.sql','Filename containing the user defined new store creation SQL commands - these are executed after the KonaKart cloning commands','25', '11', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('User new store creation SQL','USER_NEW_STORE_SQL_FILENAME','/Users/Zhang_Kevin/Desktop/konakart/database/MySQL/konakart_user_new_store.sql','Filename containing the user defined new store creation SQL commands - these are executed after the KonaKart cloning commands','25', '11', now());
 
 # Table for wish list
 DROP TABLE IF EXISTS kk_wishlist;
@@ -358,7 +358,7 @@ update kk_role set super_user = 1 where name = 'Super User';
 INSERT INTO kk_api_call (api_call_id, name, description, date_added) VALUES (221, 'forceRegisterCustomer','', now());
 
 # Reports re-located for MultiStore
-UPDATE configuration set configuration_value = 'C:/Program Files/KonaKart/webapps/birtviewer/reports/stores/store1/' where configuration_key = 'REPORTS_DEFN_PATH';
+UPDATE configuration set configuration_value = '/Users/Zhang_Kevin/Desktop/konakart/webapps/birtviewer/reports/stores/store1/' where configuration_key = 'REPORTS_DEFN_PATH';
 UPDATE configuration set configuration_value = 'http://localhost:8780/birtviewer/frameset?__report=reports/stores/store1/' where configuration_key = 'REPORTS_URL';
 UPDATE configuration set configuration_value = 'http://localhost:8780/birtviewer/run?__report=reports/stores/store1/OrdersInLast30DaysChart.rptdesign&storeId=store1' where configuration_key = 'REPORTS_STATUS_PAGE_URL';
 
@@ -367,6 +367,6 @@ UPDATE kk_role_to_panel set custom2=0, custom2_desc='Set to allow read and edit 
 
 # KonaKart Home Directory
 delete from configuration where configuration_key = 'INSTALLATION_HOME';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Installation Home', 'INSTALLATION_HOME','C:/Program Files/KonaKart/','The home directory of this KonaKart Installation', '1', '26', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES ('KonaKart Installation Home', 'INSTALLATION_HOME','/Users/Zhang_Kevin/Desktop/konakart/','The home directory of this KonaKart Installation', '1', '26', now());
 
 

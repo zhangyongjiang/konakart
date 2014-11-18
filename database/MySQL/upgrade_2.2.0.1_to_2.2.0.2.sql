@@ -15,7 +15,7 @@ INSERT INTO configuration (configuration_title, configuration_key, configuration
 
 # Location for report definitions, and BIRT viewer home
 delete from configuration where configuration_key = 'REPORTS_DEFN_PATH';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report definitions base path','REPORTS_DEFN_PATH','C:/Program Files/KonaKart/webapps/birt-viewer/reports/','The reports definition location','17', '1', now());
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report definitions base path','REPORTS_DEFN_PATH','/Users/Zhang_Kevin/Desktop/konakart/webapps/birt-viewer/reports/','The reports definition location','17', '1', now());
 delete from configuration where configuration_key = 'REPORTS_EXTENSION';
 INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) VALUES                ('Report file extension','REPORTS_EXTENSION','.rptdesign','The report file extension - identifies report files','17', '2', now());
 delete from configuration where configuration_key = 'REPORTS_URL';

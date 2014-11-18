@@ -32,7 +32,7 @@ UPDATE kk_role_to_panel SET custom4=0, custom4_desc='If set Export button not sh
 
 # Config variable to define the location of the Shipping Orders
 DELETE FROM configuration where configuration_key = 'EXPORT_ORDERS_BASE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Exported Orders Directory', 'EXPORT_ORDERS_BASE_DIRECTORY', 'C:/Program Files/KonaKart/orders', 'Defines the root directory where the Orders are exported to', '7', '7', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Exported Orders Directory', 'EXPORT_ORDERS_BASE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/orders', 'Defines the root directory where the Orders are exported to', '7', '7', now(), store_id FROM configuration where configuration_key = 'STORE_COUNTRY';
 
 # New exportOrder API call
 INSERT INTO kk_api_call (name, description, date_added) VALUES ('exportOrder','', now());

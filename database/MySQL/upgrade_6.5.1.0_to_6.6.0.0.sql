@@ -23,7 +23,7 @@ UPDATE currencies set symbol_left = '€', symbol_right = '' where code = 'EUR' 
 
 # Batch Log file location 
 DELETE FROM configuration WHERE configuration_key = 'BATCH_LOG_FILE_DIRECTORY';
-INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Batch Log file Directory', 'BATCH_LOG_FILE_DIRECTORY', 'C:/Program Files/KonaKart/batchlogs/', 'The location where KonaKart will write batch log files', '20', '2', now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
+INSERT INTO configuration (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added, store_id) SELECT 'Batch Log file Directory', 'BATCH_LOG_FILE_DIRECTORY', '/Users/Zhang_Kevin/Desktop/konakart/batchlogs/', 'The location where KonaKart will write batch log files', '20', '2', now(), store_id FROM configuration WHERE configuration_key = 'STORE_COUNTRY';
 
 # Scheduler APIs
 INSERT INTO kk_api_call (name, description, date_added) VALUES ('getJobStatus','', now());
